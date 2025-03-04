@@ -1,0 +1,210 @@
+
+*{
+ font-family: "Roboto", sans-serif;
+}
+
+main{
+ width: 1920px;
+}
+
+.firstScreen{
+ height: 700px;  
+ background: #EEEFF1; 
+ padding-top: 79px;
+ padding-left: 399px;
+}
+
+.navMenu{
+ display: flex;
+ gap: 42px;
+}
+
+.navMenu-item{
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+}
+
+.navMenu-item:hover{
+ color: #34547A;
+}
+
+.designLayout{  
+ width: 541px;
+ height: 45px;
+
+ font-family: Roboto;
+ font-weight: 500;
+ font-size: 48px;
+ line-height: 78px;
+        
+ margin-top: 162px;  
+}
+
+.designLayoutTxt{
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+
+ margin-top: 60px; 
+ color: #727272;
+}
+
+.btn{
+ margin-top: 65px;
+ background: #34547A; 
+ color: #FFFFFF;
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+ text-align: center;
+
+ width: 225px;
+ height: 65px;
+ color: #FFFFFF;
+}
+
+.btnCaption{
+ padding-top: 19px;
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+       
+ text-align: center;        
+ color: #FFFFFF;
+}
+
+.aboutMe{
+ margin-top: 112px;
+ font-family: Roboto;
+ font-weight: 500;
+ font-size: 32px;
+ line-height: 37px;
+ text-align: center;
+}
+
+.aboutMeTxt{
+ margin-top: 50px;    
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+ color: #727272;
+ text-align: center;     
+}
+
+.numbers{
+ height: 250px;
+ margin-top: 100px;
+ background: #34547A;
+}
+
+.numbersItem1{
+ margin-top: 100px;
+ margin-left: 409px;
+}
+    
+.numbersItem2{
+ margin-top: 100px;
+ margin-left: 45px;
+}
+
+.numbersItem3{
+ margin-top: 100px;
+ margin-left: 49px;
+}
+
+.numbersItem4{
+ margin-top: 100px;
+ margin-left: 49px;
+}
+
+.numbersItem5{
+ margin-top: 100px;
+ margin-left: 49px;
+}
+
+.numbersItem6{
+ margin-top: 100px;
+ margin-left: 49px;
+}
+   
+.video{
+height: 1004px;
+background: #EEEFF1
+}
+
+.videTitle{
+padding-top: 100px;
+font-family: Roboto;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+}
+
+.videTitleTxt{
+ padding-top: 50px;
+        
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 26px;
+ color: #727272;
+ text-align: center;      
+}  
+
+.image-container {
+ position: relative;
+ margin-top: 57px;  
+ margin-left: 405px;
+ height: 600px;
+ width: 1110px;   
+}
+
+.videoPic {
+ display: block;
+ height: 600px;
+ width: 1110px;
+}
+
+.videoPlayBtn{
+ position: absolute;
+ top: 250px;
+ left: 505px;   
+}
+
+.footer{
+ height: 151px;
+ background: #34547A
+}
+
+.footerNameTxt{
+ padding-top: 50px;
+ padding-left: 406px;
+
+ font-family: Roboto;
+ font-weight: 500;
+ font-size: 21px;
+ line-height: 24px;
+
+ color: #FFFFFF;
+}
+
+.footerTxt{
+ padding-top: 20px;
+ padding-left: 406px;
+    
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 13px;
+ line-height: 21px;
+
+ color: #FFFFFF;
+}
+    
+     
