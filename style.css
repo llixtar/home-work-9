@@ -8,7 +8,7 @@ main{
 }
 
 .firstScreen{
- height: 700px;  
+ height: 621px;  
  background: #EEEFF1; 
  padding-top: 79px;
  padding-left: 399px;
@@ -101,36 +101,41 @@ main{
  height: 250px;
  margin-top: 100px;
  background: #34547A;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 49px; 
 }
 
-.numbersItem1{
- margin-top: 100px;
- margin-left: 409px;
-}
-    
-.numbersItem2{
- margin-top: 100px;
- margin-left: 45px;
+
+.numbersItems{
+ display: flex;
+ align-items: center;
+ text-align: center;
+ gap: 20px; 
 }
 
-.numbersItem3{
- margin-top: 100px;
- margin-left: 49px;
+.txt{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 
-.numbersItem4{
- margin-top: 100px;
- margin-left: 49px;
+.lblTop{
+ font-family: Roboto;
+ font-weight: 500;
+ font-size: 21px;
+ line-height: 100%;
+ color:#FFFFFF;
 }
 
-.numbersItem5{
- margin-top: 100px;
- margin-left: 49px;
-}
-
-.numbersItem6{
- margin-top: 100px;
- margin-left: 49px;
+.lblBottom{
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 164%;
+ color: #FFFFFF;
 }
    
 .video{
