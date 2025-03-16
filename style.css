@@ -3,7 +3,7 @@
  font-family: "Roboto", sans-serif;
 }
 
-main{
+main{     
  width: 1920px;
 }
 
@@ -116,6 +116,8 @@ main{
  gap: 20px; 
 }
 
+
+
 .txt{
  display: flex;
  flex-direction: column;
@@ -180,7 +182,9 @@ text-align: center;
 .videoPlayBtn{
  position: absolute;
  top: 250px;
- left: 505px;   
+ left: 505px; 
+ width: 100px;
+ height: 100px;  
 }
 
 .footer{
@@ -190,7 +194,7 @@ text-align: center;
 
 .footerNameTxt{
  padding-top: 50px;
- padding-left: 406px;
+ margin-left: 406px;
 
  font-family: Roboto;
  font-weight: 500;
@@ -201,8 +205,8 @@ text-align: center;
 }
 
 .footerTxt{
- padding-top: 20px;
- padding-left: 406px;
+ margin-top: 20px;
+ margin-left: 406px;
     
  font-family: Roboto;
  font-weight: 400;
@@ -211,5 +215,313 @@ text-align: center;
 
  color: #FFFFFF;
 }
+   
+/*big screens
+
+width 1920 pixels - all scales according to the layout
+
+width 1919 pixels - adaptation*/
+@media (max-width: 1919px) {
+    main{
+        width: 100%;       
+        max-width: 1919px;
+       }
+       
+       .image-container {
+        margin: 25px auto;
+       }
+           
+             
+       .videoPlayBtn{
+       position: absolute;
+       top: 250px;
+       left: 505px;   
+       
+       width: 100px;
+       height: 100px; 
+      }
+      
+             
+      .footerNameTxt,.footerTxt{
+        margin: 0 auto;
+        text-align: center; 
+       }    
     
+} 
+
+/*desktops*/
+@media (max-width: 1440px) {
+    main{
+        width: 100%;       
+        max-width: 1440px;
+       }
+       
+       .firstScreen{
+        padding-left: 299px;
+       }
+      
+       .designLayout,.designLayoutTxt,.btn{   
+        margin-top: 100px;  
+       }
+         
+       .aboutMe,.aboutMeTxt{
+        margin-top: 50px; 
+       }
+    
+           
+       .video{
+        height: 850px;
+       }
+      
+       .videTitle,.videTitleTxt{
+        padding-top: 25px;
+          
+       }
+    
+} 
+/*laptops*/
+@media (max-width: 1280px) {
+    main{
+        width: 100%;       
+        max-width: 1280px;
+       } 
+
+       .firstScreen{
+        padding-top: 50px;
+        padding-left: 199px;
+       }
+       
+       .numbers{
+        height: 200px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 200px); 
+
+       }
+
+       .video{
+        height: 720px;
+       }
+      
+       
+      
+       .image-container {
+        height: 500px;
+        width: 800px;
+       }
+             
+       .videoPic {
+        height: 500px;
+        width: 800px;
+       }
+             
+       .videoPlayBtn{
+       position: absolute;
+       top: 212px;
+       left: 362px;   
+       width: 75px;
+       height: 75px; 
+      }
+    
+}  
+   
+
+/*tablets*/
+@media (max-width: 1024px) {
+ main{
+  width: 100%;       
+  max-width: 1024px;
+ }
+ 
+ .firstScreen{
+  padding-top: 30px;
+  padding-left: 100px;
+  height: 420px;  
+ }
+
+ .designLayout,.designLayoutTxt,.btn{   
+  margin-top: 50px;  
+ }
+   
+ .aboutMe,.aboutMeTxt{
+  margin-top: 25px; 
+ }
+
      
+ .video{
+  height: 630px;
+ }
+
+ .image-container {
+  height: 400px;
+  width: 660px;
+ }
+       
+ .videoPic {
+  height: 400px;
+  width: 660px;
+ }
+       
+ .videoPlayBtn{
+ position: absolute;
+ top: 175px;
+ left: 305px;   
+ width: 50px;
+ height: 50px; 
+}
+}
+
+/*mobile(medium)*/
+@media (max-width: 768px) {
+    
+    main{
+        width: 100%;       
+        max-width: 768px;
+       }
+       
+       .firstScreen{
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 500px;  
+       }
+
+       .navMenu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+       }
+      
+       .designLayout,.designLayoutTxt,.btn{   
+        margin: 50px auto; 
+       }
+         
+       .aboutMe,.aboutMeTxt{
+        margin-top: 25px; 
+        padding-left: 50px;
+        padding-right: 50px;
+        
+       }
+      
+       .numbers{
+        height: 400px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 200px); 
+        padding-left: 50px;
+       
+       }
+           
+       .video{
+        height: 560px;
+       }
+      
+       .videTitle,.videTitleTxt{
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;  
+       
+       }
+      
+       .image-container {
+        
+        margin: 25px auto;
+        height: 300px;
+        width: 460px;
+       }
+             
+       .videoPic {
+        height: 300px;
+        width: 460px;
+       }
+             
+       .videoPlayBtn{
+       top: 125px;
+       left: 205px;   
+       width: 50px;
+       height: 50px; 
+      }
+      
+      
+      .footer{
+        height: 75px;
+       }
+       
+       .footerNameTxt{
+        padding-top: 15px;
+       
+       }
+       
+            
+      
+} 
+
+/*mobile (small)
+Adaptation to screen widths from 375 pixels is taken into account*/
+@media (max-width: 480px) {
+    main{
+        width: 100%;       
+        max-width: 480px;
+       }
+       
+       .designLayout{
+        
+        font-weight: 500;
+        font-size: 32px;
+        margin: 50px auto; 
+
+       }
+
+       .designLayoutTxt,.btn{   
+        margin: 50px auto; 
+       }
+         
+       .aboutMe,.aboutMeTxt{
+        margin-top: 25px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        
+       }
+      
+       .numbers{
+        height: 400px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 150px); 
+        padding-left: 10px;
+       
+       }
+           
+       .video{
+        height: 450px;
+       }
+      
+       .videTitle,.videTitleTxt{
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;  
+       
+       }
+      
+       .image-container {
+        
+        margin: 25px auto;
+        height: 200px;
+        width: 350px;
+       }
+             
+       .videoPic {
+        height: 200px;
+        width: 350px;
+       }
+             
+       .videoPlayBtn{
+       top: 85px;
+       left: 160px;   
+       width: 30px;
+       height: 30px; 
+      }
+      
+      
+    
+} 
