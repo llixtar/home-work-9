@@ -392,7 +392,14 @@ width 1919 pixels - adaptation*/
         gap: 10px;
        }
       
-       .designLayout,.designLayoutTxt,.btn{   
+       .designLayout,.designLayoutTxt{
+        width: 430px; 
+        margin: 50px auto; 
+
+       }
+       
+       
+       .btn{  
         margin: 50px auto; 
        }
          
@@ -465,14 +472,22 @@ Adaptation to screen widths from 375 pixels is taken into account*/
        }
        
        .designLayout{
-        
+        width: 300px;
         font-weight: 500;
         font-size: 32px;
         margin: 50px auto; 
 
        }
 
-       .designLayoutTxt,.btn{   
+       .designLayoutTxt{
+        width: 300px; 
+        margin: 50px auto; 
+
+       }
+       
+       
+       .btn{  
+        
         margin: 50px auto; 
        }
          
