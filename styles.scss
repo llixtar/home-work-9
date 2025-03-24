@@ -1,0 +1,249 @@
+//@import "vars";
+@import "mixins";
+
+*{
+   font-family: "Roboto", sans-serif;
+ }
+   
+ main{ @include screen-size($mainWidth); }
+   
+ .firstScreen{ @include first-screen-set(621px,79px,399px); }
+   
+ .navMenu{ @include nav-menu(); }
+
+ .navMenu-item{ @include nav-menu-item(); }
+   
+ .navMenu-item:hover{ color: $footerColor; }
+
+ .designLayout{ @include design-layout(); }
+   
+ .designLayoutTxt{ @include design-layout-txt(); }
+   
+ .btn{ @include btn(); }
+   
+ .btnCaption{ @include btn-caption(); }
+
+ .aboutMe{ @include about-me(); }
+   
+ .aboutMeTxt{ @include about-me-txt(); }
+   
+ .numbers{ @include numbers(); }
+    
+ .numbersItems{ @include numbers-items(); }
+   
+ .txt{ @include numbers-items-txt(); }
+   
+ .lblTop{ @include label-top(); }
+   
+ .lblBottom{ @include label-bottom(); }
+
+ .video{ @include video(); }
+   
+ .videTitle{ @include vide-title(); }
+   
+ .videTitleTxt{ @include vide-title-text(); }  
+   
+ .image-container { @include image-container(600px,1110px); }
+   
+ .videoPic { @include video-picture(600px,1110px); }
+   
+ .videoPlayBtn{ @include video-play-btn(100px,100px,250px,505px); }
+ 
+ .footer{ @include footer(); }
+   
+ .footerNameTxt{ @include footer-name-txt(); }
+   
+ .footerTxt{ @include footer-txt(); }
+
+
+
+
+  /*big screens
+
+width 1920 pixels - all scales according to the layout
+
+width 1919 pixels - adaptation*/
+@media (max-width: $bigScreensWidth) {
+   
+  main{ @include screen-size($bigScreensWidth); }
+      
+  .image-container { margin: 25px auto; }
+              
+  .footerNameTxt,.footerTxt{
+      margin: 0 auto;
+      text-align: center; 
+   }    
+   
+} 
+
+/*desktops*/
+@media (max-width: $desktopsWidth) {
+   
+  main{ @include screen-size($desktopsWidth); }
+      
+  .firstScreen{ @include first-screen-set(621px,79px,299px); }
+     
+  .designLayout,.designLayoutTxt,.btn{ margin-top: 100px; }
+        
+  .aboutMe,.aboutMeTxt{ margin-top: 50px; }
+         
+  .video{ height: 850px; }
+     
+  .videTitle,.videTitleTxt{ padding-top: 25px; }
+} 
+
+
+/*laptops*/
+@media (max-width: $laptopsWidth) {
+   
+  main{ @include screen-size($laptopsWidth); } 
+
+  .firstScreen{ @include first-screen-set(621px,50px,199px); }
+      
+  .numbers{ @include numbers-grid(200px,3,200px); }
+
+  .video{ height: 720px; }
+     
+  .image-container { 
+    @include image-container(500px,800px); 
+    margin: 25px auto;
+   }
+            
+  .videoPic { @include video-picture(500px,800px); }
+            
+  .videoPlayBtn{ @include video-play-btn(75px,75px,212px,362px); }
+   
+}  
+
+/*tablets*/
+@media (max-width: $tabletsWidth) {
+   
+  main{ @include screen-size($tabletsWidth); }
+   
+  .firstScreen{ @include first-screen-set(420px,30px,100px); }
+  
+  .designLayout,.designLayoutTxt,.btn{ margin-top: 50px; }
+     
+  .aboutMe,.aboutMeTxt{ margin-top: 25px; }
+     
+  .video{ height: 630px; }
+  
+  .image-container { 
+    @include image-container(400px,660px); 
+    margin: 25px auto;
+   }
+         
+  .videoPic { @include video-picture(400px,660px); }
+         
+  .videoPlayBtn{ @include video-play-btn(50px,50px,175px,305px); }
+}
+
+
+  /*mobile(medium)*/
+@media (max-width: $mobileMediumWidth) {
+    
+  main{ @include screen-size($mobileMediumWidth); }
+      
+  .firstScreen{
+     padding-right: 50px;
+     @include first-screen-set(500px,30px,50px);
+   }
+
+  .navMenu{ @include nav-menu-grid(3); }
+     
+  .designLayout,.designLayoutTxt{
+     width: 430px; 
+     margin: 50px auto; 
+   }
+      
+      
+  .btn{ margin: 50px auto; }
+        
+  .aboutMe,.aboutMeTxt{
+     margin-top: 25px; 
+     padding-left: 50px;
+     padding-right: 50px;
+   }
+     
+  .numbers{
+     @include numbers-grid(400px,2,200px);
+     padding-left: 50px;
+   }
+          
+  .video{
+     height: 560px;
+   }
+     
+  .videTitle,.videTitleTxt{
+     padding-top: 25px;
+     padding-left: 50px;
+     padding-right: 50px;     
+   }
+     
+  .image-container { 
+    @include image-container(300px,460px); 
+    margin: 25px auto;
+   }
+            
+  .videoPic { @include video-picture(300px,460px); }
+            
+  .videoPlayBtn{ @include video-play-btn(50px,50px,125px,205px); }
+     
+  .footer{ height: 75px; }
+      
+  .footerNameTxt{ padding-top: 15px; }  
+} 
+
+/*mobile (small)
+Adaptation to screen widths from 375 pixels is taken into account*/
+@media (max-width: $mobileSmallWidth) {
+   
+  main{ @include screen-size($mobileSmallWidth); }
+      
+  .designLayout{
+     width: 300px;
+     font-weight: 500;
+     font-size: 32px;
+     margin: 50px auto; 
+  }
+
+  .designLayoutTxt{
+    width: 300px; 
+    margin: 50px auto; 
+  }
+      
+  .btn{ margin: 50px auto; }
+        
+  .aboutMe,.aboutMeTxt{
+    margin-top: 25px; 
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+     
+  .numbers{
+     padding-left: 10px;
+     @include numbers-grid(400px,2,150px);
+  }
+          
+  .video{
+     height: 450px;
+  }
+     
+  .videTitle,.videTitleTxt{
+     padding-top: 25px;
+     padding-left: 15px;
+     padding-right: 15px;  
+   }
+     
+  .image-container { 
+    @include image-container(200px,350px); 
+    margin: 25px auto;
+   }
+            
+  .videoPic { @include video-picture(200px,350px); }
+            
+  .videoPlayBtn{ @include video-play-btn(30px,30px,85px,160px); }
+} 
+   
+
+

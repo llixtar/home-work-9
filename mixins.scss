@@ -1,0 +1,219 @@
+@import "vars";
+
+
+@mixin screen-size($width){
+    width: 100%;       
+    max-width: $width;
+}
+
+@mixin first-screen-set($height, $paddingTop, $paddingLeft){
+    height: $height;  
+    background: $mainBackgroundColor; 
+    padding-top: $paddingTop;
+    padding-left: $paddingLeft;
+}
+
+@mixin nav-menu{
+    display: flex;
+    gap: 42px;
+}
+
+@mixin nav-menu-grid($cntCol){
+  display: grid;
+  grid-template-columns: repeat($cntCol, 1fr);
+  gap: 10px;
+}
+
+@mixin nav-menu-item(){
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin design-layout(){
+    width: 541px;
+    height: 45px;
+   
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78px;
+           
+    margin-top: 162px;  
+}
+
+@mixin design-layout-txt(){
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+   
+    margin-top: 60px; 
+    color: $titleColor; 
+}
+
+@mixin btn(){
+    margin-top: 65px;
+    background: $footerColor; 
+    color: $fontColor;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+   
+    width: 225px;
+    height: 65px; 
+}
+
+@mixin btn-caption(){
+    padding-top: 19px;
+    font-weight: 400;     
+    color: $fontColor;
+}
+
+@mixin about-me(){
+    margin-top: 112px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+@mixin about-me-txt(){
+    margin-top: 50px;    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $titleColor;
+    text-align: center;  
+}
+
+@mixin numbers(){
+    height: 250px;
+    margin-top: 100px;
+    background: $footerColor;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px; 
+
+}
+
+@mixin numbers-grid($H,$cntCol,$sizeColl){
+  display: grid; 
+  margin-top: 50px; 
+   
+  height: $H;  
+  grid-template-columns: repeat($cntCol, $sizeColl);  
+}
+
+@mixin numbers-items(){
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;  
+}
+
+@mixin numbers-items-txt(){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+@mixin label-top{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 100%;
+    color:$fontColor;
+   }
+   
+@mixin label-bottom{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    color: $fontColor;
+   }
+
+@mixin video{
+    height: 1004px;
+    background: $mainBackgroundColor;
+    }
+    
+@mixin vide-title{
+    padding-top: 100px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    }
+
+@mixin vide-title-text{
+        padding-top: 50px;
+               
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $titleColor;
+        text-align: center;      
+       }  
+       
+@mixin image-container($H,$W) {
+        position: relative;
+        margin-top: 57px;  
+        margin-left: 405px;
+        height: $H;
+        width: $W;   
+       }
+
+@mixin video-picture($H,$W) {
+        display: block;
+        height: $H;
+        width: $W;
+       }
+       
+@mixin video-play-btn($H,$W,$top,$left){
+        position: absolute;
+       
+        top: $top;
+        left: $left; 
+        width: $W;
+        height: $H;  
+       }
+
+@mixin footer{
+        height: 151px;
+        background: $footerColor;
+       }
+       
+@mixin footer-name-txt{
+        padding-top: 50px;
+        margin-left: 406px;
+       
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 24px;
+       
+        color: $fontColor;
+       }
+       
+@mixin footer-txt{
+        margin-top: 20px;
+        margin-left: 406px;
+           
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+       
+        color: $fontColor;
+       }

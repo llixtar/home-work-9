@@ -1,0 +1,459 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.firstScreen {
+  height: 621px;
+  background: #EEEFF1;
+  padding-top: 79px;
+  padding-left: 399px;
+}
+
+.navMenu {
+  display: flex;
+  gap: 42px;
+}
+
+.navMenu-item {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.navMenu-item:hover {
+  color: #34547A;
+}
+
+.designLayout {
+  width: 541px;
+  height: 45px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 78px;
+  margin-top: 162px;
+}
+
+.designLayoutTxt {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 60px;
+  color: #727272;
+}
+
+.btn {
+  margin-top: 65px;
+  background: #34547A;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  width: 225px;
+  height: 65px;
+}
+
+.btnCaption {
+  padding-top: 19px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.aboutMe {
+  margin-top: 112px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.aboutMeTxt {
+  margin-top: 50px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  text-align: center;
+}
+
+.numbers {
+  height: 250px;
+  margin-top: 100px;
+  background: #34547A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 49px;
+}
+
+.numbersItems {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lblTop {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.lblBottom {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  color: #FFFFFF;
+}
+
+.video {
+  height: 1004px;
+  background: #EEEFF1;
+}
+
+.videTitle {
+  padding-top: 100px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.videTitleTxt {
+  padding-top: 50px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 57px;
+  margin-left: 405px;
+  height: 600px;
+  width: 1110px;
+}
+
+.videoPic {
+  display: block;
+  height: 600px;
+  width: 1110px;
+}
+
+.videoPlayBtn {
+  position: absolute;
+  top: 250px;
+  left: 505px;
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+  height: 151px;
+  background: #34547A;
+}
+
+.footerNameTxt {
+  padding-top: 50px;
+  margin-left: 406px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.footerTxt {
+  margin-top: 20px;
+  margin-left: 406px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/*big screens
+
+width 1920 pixels - all scales according to the layout
+
+width 1919 pixels - adaptation*/
+@media (max-width: 1919px) {
+  main {
+    width: 100%;
+    max-width: 1919px;
+  }
+  .image-container {
+    margin: 25px auto;
+  }
+  .footerNameTxt, .footerTxt {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/*desktops*/
+@media (max-width: 1440px) {
+  main {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .firstScreen {
+    height: 621px;
+    background: #EEEFF1;
+    padding-top: 79px;
+    padding-left: 299px;
+  }
+  .designLayout, .designLayoutTxt, .btn {
+    margin-top: 100px;
+  }
+  .aboutMe, .aboutMeTxt {
+    margin-top: 50px;
+  }
+  .video {
+    height: 850px;
+  }
+  .videTitle, .videTitleTxt {
+    padding-top: 25px;
+  }
+}
+/*laptops*/
+@media (max-width: 1280px) {
+  main {
+    width: 100%;
+    max-width: 1280px;
+  }
+  .firstScreen {
+    height: 621px;
+    background: #EEEFF1;
+    padding-top: 50px;
+    padding-left: 199px;
+  }
+  .numbers {
+    display: grid;
+    margin-top: 50px;
+    height: 200px;
+    grid-template-columns: repeat(3, 200px);
+  }
+  .video {
+    height: 720px;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 57px;
+    margin-left: 405px;
+    height: 500px;
+    width: 800px;
+    margin: 25px auto;
+  }
+  .videoPic {
+    display: block;
+    height: 500px;
+    width: 800px;
+  }
+  .videoPlayBtn {
+    position: absolute;
+    top: 212px;
+    left: 362px;
+    width: 75px;
+    height: 75px;
+  }
+}
+/*tablets*/
+@media (max-width: 1024px) {
+  main {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .firstScreen {
+    height: 420px;
+    background: #EEEFF1;
+    padding-top: 30px;
+    padding-left: 100px;
+  }
+  .designLayout, .designLayoutTxt, .btn {
+    margin-top: 50px;
+  }
+  .aboutMe, .aboutMeTxt {
+    margin-top: 25px;
+  }
+  .video {
+    height: 630px;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 57px;
+    margin-left: 405px;
+    height: 400px;
+    width: 660px;
+    margin: 25px auto;
+  }
+  .videoPic {
+    display: block;
+    height: 400px;
+    width: 660px;
+  }
+  .videoPlayBtn {
+    position: absolute;
+    top: 175px;
+    left: 305px;
+    width: 50px;
+    height: 50px;
+  }
+}
+/*mobile(medium)*/
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    max-width: 768px;
+  }
+  .firstScreen {
+    padding-right: 50px;
+    height: 500px;
+    background: #EEEFF1;
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+  .navMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .designLayout, .designLayoutTxt {
+    width: 430px;
+    margin: 50px auto;
+  }
+  .btn {
+    margin: 50px auto;
+  }
+  .aboutMe, .aboutMeTxt {
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .numbers {
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    grid-template-columns: repeat(2, 200px);
+    padding-left: 50px;
+  }
+  .video {
+    height: 560px;
+  }
+  .videTitle, .videTitleTxt {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 57px;
+    margin-left: 405px;
+    height: 300px;
+    width: 460px;
+    margin: 25px auto;
+  }
+  .videoPic {
+    display: block;
+    height: 300px;
+    width: 460px;
+  }
+  .videoPlayBtn {
+    position: absolute;
+    top: 125px;
+    left: 205px;
+    width: 50px;
+    height: 50px;
+  }
+  .footer {
+    height: 75px;
+  }
+  .footerNameTxt {
+    padding-top: 15px;
+  }
+}
+/*mobile (small)
+Adaptation to screen widths from 375 pixels is taken into account*/
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    max-width: 480px;
+  }
+  .designLayout {
+    width: 300px;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 50px auto;
+  }
+  .designLayoutTxt {
+    width: 300px;
+    margin: 50px auto;
+  }
+  .btn {
+    margin: 50px auto;
+  }
+  .aboutMe, .aboutMeTxt {
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .numbers {
+    padding-left: 10px;
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .video {
+    height: 450px;
+  }
+  .videTitle, .videTitleTxt {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 57px;
+    margin-left: 405px;
+    height: 200px;
+    width: 350px;
+    margin: 25px auto;
+  }
+  .videoPic {
+    display: block;
+    height: 200px;
+    width: 350px;
+  }
+  .videoPlayBtn {
+    position: absolute;
+    top: 85px;
+    left: 160px;
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */
